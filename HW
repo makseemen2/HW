@@ -1,0 +1,474 @@
+ДЗ 1      
+
+
+
+
+print('введите количество студентов')
+N = int(input())
+print("введите количество шаурмы")
+K = int(input())
+print(K // N)
+print(K % N)
+
+
+print("введите число")
+d = int(input())
+a = str(d % 10)
+b = str(d//10 % 10)
+c = str(d//100 % 10)
+print(a+b+c)
+print(a+c+b)
+print(b+a+c)
+print(b+c+a)
+print(c+a+b)
+print(c+b+a)
+
+print('введите время готовки')
+a = int(input())
+print('введите время уборки')
+b = int(input())
+print('введите время стирки')
+c = int(input())
+d=600
+e=d+a+b+c
+i=e%60
+t=e//60
+if i<10:
+i='0'+str(i)
+while t > 24:
+t = t-24
+if t < 10:
+t = "0" + str(t)
+print(t, ':', i)
+
+print('введите пароль')
+a = (input())
+print("введите подтверждение пароля")
+b = (input())
+if a == b:
+print("Пароль принят")
+else: print("Пароль не принят")
+
+
+print('введите число')
+A = int(input())
+print('введите второе число')
+B = int(input())
+if A >= B:
+print(str(A),'- наибольшее число')
+print(str(B), " - наименьшее число")
+else:
+print(str(B), '- наибольшее число')
+print(str(A), " - наименьшее число")
+
+
+print('введите возраст')
+a = int(input())
+if a >= 18:
+print('доступ разрещён')
+else:
+print('доступ запрещён')
+
+print('введите число')
+d = int(input())
+a = str(d % 10)
+b = str(d//10 % 10)
+c = str(d//100 % 10)
+if a > b and a > c:
+print(a)
+elif b > a and b > c:
+print(b)
+else:
+print(c)
+
+print("введите число")
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+count = 0
+g = 0
+if a % 2 > 0:
+count += 1
+g += a
+if b % 2 > 0:
+count += 1
+g += b
+if c % 2 > 0:
+count += 1
+g += c
+if d % 2 > 0:
+count += 1
+g += d
+print(count, 'количество ничетных чисел')
+print(g, "сумма ничётных чисел")
+
+
+
+
+
+
+
+
+ДЗ 2
+
+
+
+
+
+
+
+
+a=int(input())
+if (10<a<22) or ( 30<a<40):
+    print("точка в множестве")
+else:
+    print("точка вне множества")
+'''
+'''
+a=int(input())
+b=int(input())
+if (-5<a<=0 and -5<b<=0) or(2<a<=7 and 2<b<=7):
+    print("да")
+else:
+    print("нет")
+'''
+'''
+a=float(input())
+b=float(input())
+v=a/b
+if v<30:
+    print("медленно")
+elif 30<=v<=60:
+    print("средне")
+else:
+    print("быстро")
+ '''
+a=str(input())
+if len(a)>=3 and len(a)<=15:
+    print("никнейм принят")
+elif len(a)<3 :
+    print("никнейм должен состоять из 3")
+else:
+    print("никнейм может состоять минимум из 15")
+    
+a=int(input())
+b=a//100
+c=a//10%10
+d=a%10
+
+sr=b+c+d-(min(b,c,d)+max(b,c,d))
+if (sr==max(b,c,d)-min(b,c,d)):
+          print("интересно найс")
+else:
+    print("неинтересно мне")
+
+a = input()
+if "кот" in a:
+ print("Мы погладили кота!")
+ 
+ 
+ 
+ 
+ ДЗ3
+ 
+ 
+ 
+ 
+ print('1 задание')
+print('введите число')
+a = int(input())
+for i in range(1,11):
+print(a, "х", i, "=", a*i)
+
+print('2 задание')
+print('введите количество чисел')
+a = int(input())
+b = 0
+for i in range(a):
+print("введите число")
+b = int(input())+b
+print(b)
+
+print('4 задание')
+b = 1
+while b != 0:
+a = int(input())
+b = int(input())
+if b==0:
+print('на ноль делить нельзя!')
+break
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+
+
+
+print('3 задание')
+a = 0
+while a != "PRINT":
+print('введите строку')
+a = str(input())
+if a == 'PRINT':
+break
+print("id" + a)
+
+
+
+
+
+ДЗ 4
+
+
+
+
+print('введите количество студентов')
+N = int(input())
+print("введите количество шаурмы")
+K = int(input())
+print(K // N)
+print(K % N)
+
+print("введите число")
+d = int(input())
+a = str(d % 10)
+b = str(d//10 % 10)
+c = str(d//100 % 10)
+print(a+b+c)
+print(a+c+b)
+print(b+a+c)
+print(b+c+a)
+print(c+a+b)
+print(c+b+a)
+
+print('введите время готовки')
+a = int(input())
+print('введите время уборки')
+b = int(input())
+print('введите время стирки')
+c = int(input())
+d=600
+e=d+a+b+c
+i=e%60
+t=e//60
+if i<10:
+i='0'+str(i)
+while t > 24:
+t = t-24
+if t < 10:
+t = "0" + str(t)
+print(t, ':', i)
+
+print('введите пароль')
+a = (input())
+print("введите подтверждение пароля")
+b = (input())
+if a == b:
+print("Пароль принят")
+else: print("Пароль не принят")
+
+print('введите число')
+A = int(input())
+print('введите второе число')
+B = int(input())
+if A >= B:
+print(str(A),'- наибольшее число')
+print(str(B), " - наименьшее число")
+else:
+print(str(B), '- наибольшее число')
+print(str(A), " - наименьшее число")
+
+print('введите возраст')
+a = int(input())
+if a >= 18:
+print('доступ разрещён')
+else:
+print('доступ запрещён')
+
+print('введите число')
+d = int(input())
+a = str(d % 10)
+b = str(d//10 % 10)
+c = str(d//100 % 10)
+if a > b and a > c:
+print(a)
+elif b > a and b > c:
+print(b)
+else:
+print(c)
+
+print("введите число")
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+count = 0
+g = 0
+if a % 2 > 0:
+count += 1
+g += a
+if b % 2 > 0:
+count += 1
+g += b
+if c % 2 > 0:
+count += 1
+g += c
+if d % 2 > 0:
+count += 1
+g += d
+print(count, 'количество ничетных чисел')
+print(g, "сумма ничётных чисел")
+
+ 
+ 
+ 
+ дз 5
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ print('программа 1')
+print('Введите количество слов в аббревиатуре ')
+n = int(input())
+d = ''
+for i in range(1, n+1):
+c = input('введите аббревиатуру ')
+d = d + c[0]
+print(d.upper())
+
+print('программа 2')
+n = input()
+print(len(n))
+print(n[0])
+print(n[-1])
+print(n[::-1])
+print(n[::2])
+print(n[1::2])
+
+print('программа 3')
+n = input()
+s = 1
+if n.isdigit():
+for i in n:
+print(int(i) * 10)
+elif n.find("q") == 1:
+print(n.count("q"))
+
+else:
+r = 0
+for i in n:
+if i == '!' or i == '?' or i == '#' or i == '/' or i == '*' or i == '&':
+print(r)
+r += 1
+
+print('программа 4')
+while True:
+s = input("Задайте строку: ")
+if s.upper() == "STOP":
+break
+if s.isalpha():
+print("Буквенная строка")
+elif s.isdigit():
+print("Цифровая строка")
+elif s.isalnum():
+print("Смешанная строка")
+Самостоялка 2
+SR
+print('вариант 12')
+
+print('задание 1 ')
+for x in range(-40, 44, 5):
+x /= 100
+y = (x**2/(1+(3*(x**2)))**(1/3))
+print('х равен =', x, "y равен =", y)
+
+print('задание 2')
+s = 0
+print('Введите число от 1 до 7')
+n = int(input())
+while n > 7:
+print('Не верно')
+n = int(input())
+for b in range(n, 8):
+s += (2*n+1)/4*n
+print(s/5)
+
+print('задание 3')
+n = int(input())
+a = n//2
+b = a
+for y in range(1, a+1):
+print('1 ' * y + '0 ' * (n - y * 2) + '1 ' * y)
+if n % 2 != 0:
+print('1 ' * n)
+else: b -= 1
+for y in range(b, 0, -1):
+print('1 ' * y + '0 ' * (n - y * 2) + '1 ' * y)
+s = (n*3)-6
+print(f'Сумма трех последних столбцов равна:', s)
+
+
+
+
+
+
+дз 6
+
+
+
+
+
+print('программа 1')
+a = int(input('Задайте размер списка:'))
+b = int(input('Задайте начало диапозона:'))
+c = int(input('Задайте конец диапозона:'))
+n = list()
+for i in range(1, a+1):
+q = randint(b, c)
+n.append(q)
+print(n)
+print(len(n))
+print(max(n))
+print(min(n))
+w = sorted(n)
+print(w)
+print(w[::-1])
+
+print('программа 2')
+a = int(input())
+n = list()
+for i in range(1, a+1):
+q = randint(0, 1)
+n.append(q)
+print(n)
+print(n.count(0))
+print(n.count(1))
+s = list()
+for j in range(len(n)):
+if n[j] == 0:
+s.append(j)
+print(s)
+
+print('программа 3')
+a = int(input('введите размер списка '))
+n = list()
+for i in range(1, a+1):
+q = randint(0, 9)
+n.append(q)
+print(n)
+b = int(input('введите число которое нужно удалить '))
+for j in range(len(n)-1, -1, -1):
+if n[j] == b:
+n.pop(j)
+print(n)
+
+ 
+ 
+ 
+ 
+ 
+ 
